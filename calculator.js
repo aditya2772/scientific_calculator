@@ -1,4 +1,4 @@
-
+// DECLARING GOLBAL CONST 
 const displayScreen = document.getElementById('displayScreen');
 const displayScreen1 = document.getElementById('displayScreen1');
 const btn = Array.from(document.getElementsByClassName('btnn'));
