@@ -1,0 +1,95 @@
+.bodyDefault{
+    background-color: #2f404f;
+}
+
+
+.cardDefault{
+    margin: 20vh auto 0 auto;
+    box-shadow: 7px 12px 37px -5px rgba(9,12,17,0.51);
+    height: 20rem;
+    background-color: #efa8e4;
+}
+
+#displayScreen {
+    text-align: right;
+    height: 85px;
+    line-height: 70px;
+    padding: 16px 8px;
+    font-size: 25px;
+}
+#displayScreen1 {
+    text-align: right;
+    font-size: 25px;
+}
+.allButtons {
+    display: grid;
+    border-bottom: 1px solid #999;
+    border-left: 1px solid #999;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.allButtons > div {
+    border-top: 1px solid #999;
+    border-right: 1px solid #999;
+}
+.btn {
+    border: 0.5px solid #999;
+    line-height: 70px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: #323330;
+    color: white;
+    transition: 0.2s ease-in-out;
+}
+.clock {
+    cursor: pointer;
+    /* margin-left: 330px; */
+}
+.clock:hover{
+    color: rgb(96, 68, 113);
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #0fa,
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px #0fa;
+
+    
+}
+.p{
+    font-size: large;
+    font-weight: bold;
+    color: darkslateblue;
+}
+.themeButton{
+    border: 0.5px solid #999;
+    line-height: 25px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+
+    background: #DC2424;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #4A569D, #DC2424);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #4A569D, #DC2424); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    color: white;
+    transition: 0.2s ease-in-out;
+   
+}
+.defaultCal{
+    margin: 20vh auto 0 auto;
+    box-shadow: 7px 12px 37px -5px rgba(9,12,17,0.51);
+    background-color: #d2e2e2;
+}
+
+.color{
+    margin: 20vh auto 0 auto;
+    box-shadow: 7px 12px 37px -5px rgba(9,12,17,0.51);
+   
+    background-color: #efa8e4;
+}

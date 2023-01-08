@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./calculator.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
+</head>
+<body class="bodyDefault" id="body">
+    <section class="container">
+        <div class="row">
+            <div class="col-md-4 ">
+                <div class="card cardDefault" id="historyCard">
+                    <div class="row mt-2">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-8">
+    
+                            <span><h4>History</h4></span>
+                        </div>
+                        <div class="col-md-2 ml-4">
+    
+                            <span class="closeBtn"><button class="btn btn-danger" onclick="closeHistory()"><i class="fa-solid fa-xmark"></i></button></span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h5 id="myHistory"></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       
+        <div class=" defaultCal pl-0 pr-0 col-md-4 rounded" id="calciCard">
+          
+            <div id="message">
+   
+            </div>
+            <div class="row">
+                <div class="col-md-3 ml-2">
+                    <span class="clock">
+                        <i class="fa-regular mt-2 fa-clock fa-2x" onclick="showHistory()" ></i>
+                    </span>
+                </div>
+                <div class="col-md-8 ml-3">
+                    <div id="displayScreen1">
+
+                    </div>
+                </div>
+            </div>
+           
+           
+            <div id="displayScreen">
+                
+            </div>
+            <div class="allButtons">
+                <div class="btn btnn">C</div>
+                <div class="btn btnn">/</div>
+                <div class="btn btnn">*</div>
+                <div class="btn btnn">%</div>
+                <div class="btn btnn">sin</div>
+                <div class="btn btnn">&#8592;</div>
+                <div class="btn btnn">7</div>
+                <div class="btn btnn">8</div>
+                <div class="btn btnn">9</div>
+                <div class="btn btnn">x<sup>2</sup></div>
+                <div class="btn btnn">cos</div>
+                <div class="btn btnn">-</div>
+                <div class="btn btnn">4</div>
+                <div class="btn btnn">5</div>
+                <div class="btn btnn">6</div>
+                <div class="btn btnn">&pi;</div>
+                <div class="btn btnn">tan</div>
+                <div class="btn btnn">+</div>
+                <div class="btn btnn">1</div>
+                <div class="btn btnn">2</div>
+                <div class="btn btnn">3</div>
+                <div class="btn btnn">&radic;</div>
+                <div class="btn btnn">10<sup>x</sup></div>
+                <div class="btn btnn">.</div>
+                <div class="btn btnn">(</div>
+                <div class="btn btnn">0</div>
+                <div class="btn btnn">)</div>
+                <div class="btn btnn">log</div>
+                <div class="btn btnn">n!</div>
+                <div id="equal" class="btn btnn btn-primary">=</div>
+            </div>
+        </div>
+       <div class="col-md-3">
+           <div class="card color" id="themeCard">
+               <div class="row justify-content-center mt-2">
+                   <h4>Choose Your Theme</h4>
+               </div>
+               <hr>
+               <div class="row justify-content-center">
+                   <div class="col-md-10 mt-3">
+                     <button class="themeButton btn btn-block " onclick="defaultTheme()" >Default</button>
+                   </div>
+                   <div class="col-md-10 mt-3">
+                    <button class="themeButton btn btn-block " onclick="theme1()">Theme1</button>
+                  </div>
+                  <div class="col-md-10 mt-3">
+                    <button class="themeButton btn btn-block " onclick="theme2()">Theme2</button>
+                  </div>
+                  <div class="col-md-10 mt-3 mb-4">
+                    <button class="themeButton btn btn-block " onclick="theme3()">Theme3</button>
+                  </div>
+               </div>
+           </div>
+           
+       </div>
+    </div>
+    </section>
+    <script src="./calculator.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
+</body>
+</html>
